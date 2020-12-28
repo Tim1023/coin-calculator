@@ -23,23 +23,23 @@
         document.getElementById("total").innerHTML = total;
     }
     function onD2Change(e) {
-          document.getElementById("d2").innerHTML = Math.round(e/d2)*2;
+          document.getElementById("d2").innerHTML = (Math.round(e/d2)*2).toFixed(2);
           renderTotal()
     }
     function onD1Change(e) {
-          document.getElementById("d1").innerHTML = Math.round(e/d1)*1;
+          document.getElementById("d1").innerHTML = (Math.round(e/d1)*1).toFixed(2);
           renderTotal()
     }
     function onD05Change(e) {
-          document.getElementById("d05").innerHTML = Math.round(e/d05)*0.5;
+          document.getElementById("d05").innerHTML = (Math.round(e/d05)*0.5).toFixed(2);
           renderTotal()
     }
     function onD02Change(e) {
-          document.getElementById("d02").innerHTML = Math.round(e/d02)*0.2;
+          document.getElementById("d02").innerHTML = (Math.round(e/d02)*0.2).toFixed(2);
           renderTotal()
     }
     function onD01Change(e) {
-          document.getElementById("d01").innerHTML = Math.round(e/d01)*0.1;
+          document.getElementById("d01").innerHTML = (Math.round(e/d01)*0.1).toFixed(2);
           renderTotal()
     }
   </script>
