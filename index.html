@@ -18,9 +18,9 @@
         const coinTypes = ['d2','d1','d05','d02','d01']
         const total = coinTypes.reduce((prev, curr) => {
           return prev
-            +parseInt(document.getElementById(curr).innerHTML)
+            +parseFloat(document.getElementById(curr).innerHTML)
         }, 0)
-        document.getElementById("total").innerHTML = total;
+        document.getElementById("total").innerHTML = total.toFixed(2);
     }
     function onD2Change(e) {
           document.getElementById("d2").innerHTML = (Math.round(e/d2)*2).toFixed(2);
